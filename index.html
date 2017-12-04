@@ -1,17 +1,18 @@
 <html>
     <meta charset="UTF-8">
     <head>
-        <title>Retrieying a Textbox Value Example</title>
-        <script type="text/javascript">
-            function getValues(){
-                var oTextbox1=document.getElementById("txt1");
-                var oTextbox2=document.getElementById("txt2");
-                alert("The value of txt1 is");
-            }
+        <title>Turing Machine</title>
+        <script type="text/javascript" src="function.js">
         </script>
     </head>
     <body>
-        <input type="text" size="12" id="txt1" /><br/>
-        <input type="button" value="Get Values" onclick="getValues()"/>
+	<div align="center">
+        
+		输入字符串：<input type="text" size="18" id="txt1" style="width:800px; height:20px;" align="center" />
+        确认：<input type="button" value="OK" onclick="getValues()"/><br/>
+		运算过程<br/>
+        <a id="res"></a>
+	</div>
+        
     </body>
 </html>
