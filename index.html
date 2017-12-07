@@ -6,11 +6,16 @@
         </script>
     </head>
     <body>
-	<div align="center">
-        
-		输入字符串：<input type="text" size="18" id="txt1" style="width:800px; height:20px;" align="center" />
-        确认：<input type="button" value="OK" onclick="getValues()"/><br/>
-		运算过程<br/>
+	<div align="left">
+        输入规则：<br/>
+        <textarea type="text" size="18" id="rules" style="width:800px; height:200px;" align="top"></textarea><br/>
+        输入纸带：<br/>
+        <textarea type="text" size="18" id="tape" style="width:800px; height:40px;" align="top"></textarea><br/>
+        清除指令：<input type="button" value="Clear Instruction" onclick="clearInstruction()"/>
+        清空纸带：<input type="button" value="Clear Tape" onclick="clearTape()"/>
+        清空指令与纸带:<input type="button" value="Clear" onclick="clear()"/>
+        确认：<input type="button" value="OK" onclick="run()"/><br/>
+        运算过程<br/>
         <a id="res"></a>
 	</div>
         
